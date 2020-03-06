@@ -1,0 +1,194 @@
+/*
+
+Tooplate 2116 Blugoon
+
+https://www.tooplate.com/view/2116-blugoon
+
+*/
+
+/*@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");*/
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+	overflow-x: hidden;
+  
+  }
+
+#page-wraper {
+    background: #4AA0DD no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+
+}
+
+
+/* Basic */
+
+
+a {
+	color: #9FF;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FF0;
+	text-decoration: none;
+}
+
+p {
+	letter-spacing: 0.2px;
+    line-height: 2em;
+    color: #fff;
+  
+}
+h2, span, p, h4, video,pre {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0%px;
+    margin-left: 2%;
+}
+
+h4, pre {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.2px;
+  
+}
+
+
+img {
+    background: #FFFFFF;
+    padding: 15px;
+    width: 95%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    margin-left: 2%;
+    border-radius: 5px;
+ 
+}
+
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+   
+}
+
+
+
+
+.imagemain  {
+
+    width: 95%; 
+    height:300px;
+    overflow: hidden;
+    
+    background-image:url(../images/독도.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5%px;
+    margin-left: 2%;
+   
+}
+
+/* 에니메이션 */
+.imagemain:after { 
+    content:'';
+    width: 200px; 
+    height: 300px;
+   
+    background-image: 
+    url(../images/태극기.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+   position:absolute;
+  
+      -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -webkit-animation-delay: -1s!important;
+      -webkit-transform:scale(0.05);  
+      -webkit-animation-name: movingPara;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+
+      /*transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      animation-delay: -1s!important;
+      transform:scale(0.05);
+      animation-name: movingPara;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+
+}
+
+.imagemain:before { 
+    content:'';
+    width: 200px; 
+    height: 300px;
+   
+    background-image: 
+    url(../images/갈매기.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+   position:absolute;
+  
+      -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -webkit-animation-delay: -1s!important;
+      -webkit-transform:scale(0.05);  
+      -webkit-animation-name: movingPara;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+
+      /*transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      animation-delay: -1s!important;
+      transform:scale(0.05);
+      animation-name: movingPara;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+
+}
+
+
+
+ @-webkit-keyframes movingPara {
+     0% { left :-30%; margin-top: -35%; transform: scale(0.2); opacity : 1.0;} 
+      
+      100% {  left: 100%; margin-top: -35%; transform: scale(0.2);opacity : 1.0;}
+   
+    }
+    
+    
+ @keyframes movingPara {
+
+      0% { left :-30%; margin-top: -35%; transform: scale(0.2); opacity : 1.0;} 
+      
+      100% {  left: 100%; margin-top: -35%; transform: scale(0.2);opacity : 1.0;}
+   
+    }
+ /* 에니메이션 끝 */   
+
+
